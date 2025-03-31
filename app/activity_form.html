@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- 
+        This file is the form
+     -->
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="activity_form.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+    <h1>Agregar actividad</h1>
+    <ul class="navbar">
+        <li>
+            <a class="navbar-link" href="./index.html">Portada</a>
+        </li>
+        <li>
+            <a class="navbar-link navbar-link-active" href="./activity_form.html">Agregar actividad</a>
+        </li>
+        <li>
+            <a class="navbar-link" href="./activity_list.html">Ver listado de actividades</a>
+        </li>
+        <li>
+            <a class="navbar-link" href="./activity_stats.html">Estadísticas</a>
+        </li>
+    </ul>
+    <div>
+        <form>
+            <h4>¿Dónde?</h4>
+
+            <label for="region">Región</label>
+            <select type="select" name="region" id="region">
+                <option value="region1">Región 1</option>
+                <option value="region2">Región 2</option>
+                <option value="region3">Región 3</option>
+            </select><br>
+
+            <label for="comuna">Comuna</label>
+            <select type="select" name="comuna" id="comuna">
+                <option value="comuna1">Comuna 1</option>
+                <option value="comuna2">Comuna 2</option>
+                <option value="comuna3">Comuna 3</option>
+            </select><br>
+
+            <label for="sector">Sector</label>
+            <input type="text" name="sector" id="sector" size="100"></input><br>
+
+            <h4>¿Quién organiza?</h4>
+
+            <label for="name">Nombre</label>
+            <input type="text" name="nombre" id="nombre">Nombre</input><br>
+
+            <label for="correo">Correo</label>
+            <input type="email" name="correo" id="correo"></input><br>
+
+            <label for="celular">Número de Celular</label>
+            <input type="tel" name="celular" id="celular"></input><br>
+
+            <div name="contactarpor" id="contactarpor">
+                <label for="contactarpor1">Contactar por</label>
+                <select type="select" name="contactarpor1" id="contactarpor1">
+                    <option value="comuna1">Contacto1</option>
+                    <option value="comuna2">Contacto2</option>
+                    <option value="comuna3">Contacto3</option>
+                    <option value="comuna3">Otro</option>
+                </select>
+            </div>
+
+            <h4>¿Cuándo y de qué trata?</h4>
+
+            <label for="diahorainicio">Día hora inicio</label>
+            <input type="datetime-local" name="diahorainicio" id="diahorainicio"></input><br>
+
+            <label for="diahoratermino">Día hora término</label>
+            <input type="datetime-local" name="diahoratermino" id="diahoratermino"></input><br>
+
+            <label for="descripcion">Descripción</label>
+            <textarea type="text" name="descripcion" id="descripcion" rows="10" cols="50"></textarea><br>
+
+            <div name="fotos" id="fotos">
+                <label for="foto">Foto</label>
+                <input type="file" name="foto" id="foto" accept="image/png, image/jpeg"><br>
+                <button name="morefotos" id="morefotos">Agregar otra foto</button>
+            </div>
+            <button>Agregar esta actividad</button>
+        </form>
+    </div>
+</body>
+
+</html>
