@@ -1,0 +1,46 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+  
+.navbar-link {
+    display: block;
+    width: 160px;
+    color: #000000;
+    padding: 8px 16px;
+    text-decoration: none;
+
+}
+  
+  /* Change the link color on hover */
+.navbar-link:hover {
+    background-color: #2bf0f0;;
+    font-style: oblique;
+    color: #000000;
+}
+
+.navbar-link-active {
+    background-color: #169e9e;
+    color: white;
+}
+
+.table-recents {
+    /* border: 1px solid black; */
+    /* border-collapse: collapse; */
+    width: 100%;
+}
+
+.table-head-recents {
+    background-color: #f1f1f1;
+    /* border: 1px solid black; */
+    /* border-collapse: collapse; */
+    height: 30px;
+    font-size: large;
+}
+
+.table-cell-recents {
+    border: 1px solid black;
+}
